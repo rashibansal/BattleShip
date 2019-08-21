@@ -167,7 +167,7 @@ public class BattleDetails {
                           throw new InvalidInputException("Input value is not P or Q");
                     }
                     
-                    System.out.println("\nEnter dimension of battleship 1 (no of row then col)");
+                    System.out.println("\nEnter dimension of battleship 1 (no of row then col without space)");
                     dimensionBattleShip1 = reader.nextLine();
                     if(!dimensionBattleShip1.matches("[1-9]{2}"))
                           throw new  InvalidInputException("Invalid Dimension"); 
@@ -192,7 +192,7 @@ public class BattleDetails {
                     }
                     
                     
-                    System.out.println("\nEnter dimension of battleship 2 (no of col then rows)");
+                    System.out.println("\nEnter dimension of battleship 2 (no of col then rows without space)");
                     dimensionBattleShip2 = reader.nextLine();
                     if(!dimensionBattleShip2.matches("[1-9]{2}"))
                           throw new  InvalidInputException("Invalid Dimension");
