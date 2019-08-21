@@ -134,7 +134,7 @@ public class BattleDetails {
              }
              
              /*converts the non number location to numeric for the int matrix */
-             static int convertStringToInteger(String s) {
+             public static int convertStringToInteger(String s) {
                     int returnIntValue = 0;
                     char[] rowTemp = s.toCharArray();
                     int temp = (int) rowTemp[0];
@@ -198,12 +198,12 @@ public class BattleDetails {
                           throw new  InvalidInputException("Invalid Dimension");
                     
                     
-                    System.out.println("\nEnter location of battleship 2 player A (ex d4)");
+                    System.out.println("\nEnter location of battleship 2 player A (ex D4)");
                     locationBattleShip2A = reader.nextLine();
                     if(!locationBattleShip2A.matches("(?i)[a-z][1-9]{1}"))
                           throw new  InvalidInputException("Invalid Location");
                     
-                    System.out.println("\nEnter location of battleship 2 player B (ex c3)");
+                    System.out.println("\nEnter location of battleship 2 player B (ex C3)");
                     locationBattleShip2B = reader.nextLine();
                     if(!locationBattleShip2B.matches("(?i)[a-z][1-9]{1}"))
                           throw new  InvalidInputException("Invalid Location");
